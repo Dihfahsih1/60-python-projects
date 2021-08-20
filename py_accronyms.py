@@ -7,5 +7,6 @@ a = " " #defining the variable that would store our first letter of the word
 
 for i in text: #loop through the splitted text
     a = a + str(i[0]).upper()#store each first letter of the splitted text and convert it to upper case
-print(a)    
+print(a)   
+ 
 
