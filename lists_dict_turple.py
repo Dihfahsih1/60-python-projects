@@ -136,4 +136,17 @@ print(a)
 #test=[ i for i[0] in m.split(' ')]
 # print(test)
 
+txt = "hello, my name is Peter, I am 26 years old"
+x = []
+for i in txt.split("," ,2):
+    x.append(i[2])
+
+print(x)
+
+import shutil
+a ="/home/pythonista/Desktop/python/a/df.jpg"
+b ="/home/pythonista/Desktop/python/b"
+j= shutil.copy(a, b)
+
+
 
