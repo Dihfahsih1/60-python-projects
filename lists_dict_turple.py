@@ -31,7 +31,35 @@ print(even_numbers)
 
 #using lambda expression
 even_nos = list(filter(lambda x: (x % 2 == 0), c))
-print (even_nos)
+
+#buit in ATTRIBUTES of a list 
+#they include all(), any(), list(), sorted(), min max sum() len()
+print (even_nos, "they are " + str(len(even_numbers)) + " even numbers")
+even_nos.insert(0, 64)
+even_nos.append('string')
+
+even_nos.pop()
+print(max(even_nos))
+
+print(len(even_nos))
+
+#print(sorted(even_nos))
+
+#Built in METHODS OF A LIST
+#a function is what you apply to a construct and get a result
+#A method is what you can do to it and change it
+#we use a .dot operator
+#they include the following append() insert() pop() remove() clear() index() count() sort() reverse()
+
+even_nos.append('astring')
+
+print(even_nos.index(64))
+
+even_nos.remove('astring')
+
+print(even_nos.sort())
+
+print(even_nos.reverse())
 
 #replace an item in the list
 back_end[1]='django'
@@ -96,4 +124,16 @@ a_turple = ('ug','uganda', 'tz','tanzania')
 a_set = {12, 40, 'james', 12, 'jon', 'james'}
 #print(a_set)
 #print(a_set[2]) sets can not be assigned
-  
+
+#real world
+#how can you print the first string of this (My Name Is Dihfahsih)
+m='My Name is Dihfahsih'
+a=[]
+for i in m.split(' '):
+    a.append(i[0])
+print(a)
+    
+#test=[ i for i[0] in m.split(' ')]
+# print(test)
+
+
