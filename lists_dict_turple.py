@@ -133,8 +133,7 @@ for i in m.split(' '):
     a.append(i[0])
 print(a)
     
-#test=[ i for i[0] in m.split(' ')]
-# print(test)
+
 
 txt = "hello, my name is Peter, I am 26 years old"
 x = []
