@@ -1,4 +1,6 @@
 from Questions import Questions
+
+#a list of questions
 questions_prompts =[
     "What colour are Apples?\n(a) Red/Green \n(b) Purple\n(c) Orange\n\n",
     
