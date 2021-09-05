@@ -17,3 +17,18 @@ d = 1,
 print (type(a))
 
 print (type(d))
+
+#turple may contain items of different data types
+j= (1, 2.0,'three', ["list","turple"])
+
+
+#you can only concatenate tuple to a tuple not any other type to a tuple
+j + d
+print(j)
+
+#though tuples are immutable but if the item in the tuple are a list, they can be changed
+j[3][0] = 'tuple' 
+j[3][1]= 'list'
+
+print(j.index('three'))
+
