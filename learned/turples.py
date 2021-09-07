@@ -32,3 +32,11 @@ j[3][1]= 'list'
 
 print(j.index('three'))
 
+#Python
+my_fav_language ="python rocks"
+print(my_fav_language.strip("rocks"))
+
+
+#this assigns the 
+a,b,*c = [2, 3, 5, 7, 8, 0,5]
+
