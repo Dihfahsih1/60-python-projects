@@ -40,3 +40,9 @@ print(my_fav_language.strip("rocks"))
 #this assigns the 
 a,b,*c = [2, 3, 5, 7, 8, 0,5]
 
+colors = ['black', 'red', 'yellow', 'white']
+
+for color in colors[:2]:
+    print(color)
+
+
