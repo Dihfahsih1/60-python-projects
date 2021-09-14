@@ -34,7 +34,7 @@ print(j.index('three'))
 
 #Python
 my_fav_language ="python rocks"
-print(my_fav_language.strip("rocks"))
+#print(my_fav_language.strip("rocks"))
 
 
 #this assigns the 
@@ -43,6 +43,17 @@ a,b,*c = [2, 3, 5, 7, 8, 0,5]
 colors = ['black', 'red', 'yellow', 'white']
 
 for color in colors[:2]:
-    print(color)
+    #print(color)
+    pass
+    
+colors = {
+    'raza':'black',
+    'prathan':'white',
+    'insha':'blue'
+}
 
-
+for name, color in colors.items():
+    if name == 'prathan':
+        print(f'''{name.title()}'s favorite color is {color},''')
+    else:
+        break
