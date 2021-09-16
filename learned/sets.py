@@ -62,5 +62,30 @@ c.update("Mark", "Luke", "Acts")
 
 #union, difference
 
+#union on set, it combines all sets together, removing all duplicates
+
+old = {'Genesis', "Exodus", "Numbers", "God", "Command"}
+new = {'Mathew', 'Mark', 'Luke', 'John', "God", "Grace"}
+
+books = old.union(old, new)
+print(books)
+
+
+#intersection, returns common elements
+print(old.intersection(new))
+
+#difference,returns elements that are unique to a given set
+
+print(new.difference(old))
+
+
+#symmetric_difference, returns elements that are unique to each set
+
+print(new.symmetric_difference(old))
+
+
+print(new.intersection_update(old))
+
+
 
 
