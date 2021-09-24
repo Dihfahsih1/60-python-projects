@@ -29,3 +29,33 @@ for i in range(len(list2)):
     print(str(i) + " " + str(list2[i]))
 else:
     print("all items have been printed")
+    
+#Nested loops
+
+for i in range(0, 6):
+    for j in range(i):
+        print("*", end=' ')
+        if i==0: break
+    print()
+    
+#nested while loop
+i=6
+while(i>0):
+    j=6 
+    while(j>i):
+        print("*", end=' ')
+        j-=1
+    i-=1
+    print()
+    
+def evens(n):
+    print(0)
+    x=2
+    for i in range(1, n):
+        for j in range(i+1):
+            print(x, end='')
+        x*=2
+        print(x)
+n=int(input("how many lines?"))
+evens(n)
+    
