@@ -30,7 +30,7 @@ for i in range(len(list2)):
 else:
     print("all items have been printed")
     
-#Nested loops
+#Nested for loop
 
 for i in range(0, 6):
     for j in range(i):
