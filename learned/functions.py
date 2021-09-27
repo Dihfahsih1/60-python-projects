@@ -21,3 +21,23 @@ def people(*names):
     for i in names:
         print(f"{i}, hello")
 people('John', 'Mathew', 'Luke')
+
+#*args in a function, pass a number of non-keyworded arguements, take in a number of more args than pre-defined
+
+def bible(arg1, *args):
+    print("the bible is all about: ", arg1)
+    print("Other things the bible is all about: ", end=" ")
+    for i in args:
+        print(str(i),end=",")
+    return 
+bible('God',"creation","fall of man", 'restoration', 'judgement')
+
+#**kwargs, this pass key-value into the function
+
+def bible_division(*args, **kwargs):
+    print(args)
+    print("this is how the bible is divided up: ", end=" ")
+    for key,value in kwargs.items():
+        print('%s==%s' %(key, value))
+bible_division(bible,old_testament="37 books",new_testament="29 books" )
+        
