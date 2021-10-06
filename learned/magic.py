@@ -1,5 +1,6 @@
 var1 ="hello"
 var2 = " world"
+import pickle
 
 print(var1.__add__(var2))
 
@@ -13,4 +14,3 @@ class Sumlist(object):
     return str(self.mylist)
 a=Sumlist([12,34,56])
 b=Sumlist([1,24,67,98,90])
-print(a+b)
