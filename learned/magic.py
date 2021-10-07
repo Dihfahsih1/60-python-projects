@@ -14,3 +14,14 @@ class Sumlist(object):
     return str(self.mylist)
 a=Sumlist([12,34,56])
 b=Sumlist([1,24,67,98,90])
+
+year = 2000 
+year=input("Enter the Year: ")
+int(year)
+if(year%4)==0:
+  if(year%100)==0:
+    if(year%400)==0:
+      print(f'{year} is a leaper year'.format(year))
+    else:
+      print('{0} is not a leaper year')
+  
