@@ -1,2 +1,2 @@
-def to_lowera(name:str):
+def to_lower(name:str):
   return name.lower()
