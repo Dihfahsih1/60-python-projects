@@ -7,6 +7,7 @@ import os, sys
 x = "Hello World"
 res = utils.get_length(x)
 print(utils.to_upper(x))
+print(utils.to_lower(x))
 utils.yolo(2)
 
 print("the length of hello is ", res, "characters long")
