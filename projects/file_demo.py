@@ -1,3 +1,4 @@
 with open("paper.docx", 'r') as f:
-
-  print(f.name)
+  
+  f_content = f.readlines()
+  print(f_content)
