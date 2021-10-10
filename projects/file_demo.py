@@ -1,5 +1,3 @@
-f=open("paper.docx", 'r')
+with open("paper.docx", 'r') as f:
 
-print(f.name)
-
-f.close()
+  print(f.name)
