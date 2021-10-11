@@ -1,4 +1,4 @@
-with open("paper.docx", 'r') as f:
+with open("srs.doc", 'r') as f:
   
-  f_content = f.readlines()
-  print(f_content)
+  for line in f:
+    print(line, end=" ")
