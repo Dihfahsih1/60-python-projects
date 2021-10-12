@@ -1,4 +1,5 @@
-with open("srs.doc", 'r') as f:
-  
-  for line in f:
-    print(line, end=" ")
+with open("srs.doc", 'rb') as rf:
+  with open("srs_copy.txt", 'wb') as wf:
+    for line in rf:
+      wf.write(line)
+ 
