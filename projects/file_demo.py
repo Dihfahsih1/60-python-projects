@@ -1,23 +1,26 @@
 import csv
 
-email = ["dihfahsih.mugoya@gmail.com",'difas.mugoya@gmail.com']
+email = ["dihfahsih.mugoya@gmail.com",'difasmugoya@gmail.com']
 
 for lines in email:
   line=str(lines) #convert list to string
-  username = line.split("@", 1)[0]
-  print(username)
+  #username = line.split("@", 1)[0]
+  username, _, _ = line.partition("@")
+  name = username.split(".")
   try:
-    first_name = username.split('.', 1)[0].capitalize()
-    print(first_name)
+    if len(name)>=2:
+      first_name = name[0]
+      print("First Name: " +first_name)
+      
+      last_name = name[1]
+      print("Last Name :" +last_name)
+      
+    else:
+      print(f"Your user name: {username}")
   except Exception as e:
-    print(e)
+    print('error')
     
-  try:
-    last_name = username.split('.', 1)[1].capitalize()
-    print(last_name)
-  except Exception as e:
-    print(e)
-        
+
     
         
   
