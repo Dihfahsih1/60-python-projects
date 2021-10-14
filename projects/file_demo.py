@@ -24,6 +24,9 @@ with open('list_of_emails.csv', 'r') as f:
         print(f"Your username is  {username}")
     except Exception as e:
       print('error')
+      
+
+#writing to a new file to store the fetched data      
 with open('new_list_of_emails.csv', 'w') as f:
   new_email_list = str(new_list)
   f.write(new_email_list)  
