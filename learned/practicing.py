@@ -56,4 +56,4 @@ for name, color in colors.items():
     if name == 'prathan':
         print(f'''{name.title()}'s favorite color is {color},''')
     else:
-        break
+        continue
