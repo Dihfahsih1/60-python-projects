@@ -57,3 +57,6 @@ for name, color in colors.items():
         print(f'''{name.title()}'s favorite color is {color},''')
     else:
         continue
+
+mylist = ['mugoya','desire','coule']
+for i in mylist: print(i[0])
