@@ -58,5 +58,3 @@ for name, color in colors.items():
     else:
         continue
 
-mylist = ['mugoya','desire','coule']
-for i in mylist: print(i[0])
