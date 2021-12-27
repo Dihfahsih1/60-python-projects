@@ -12,4 +12,9 @@ while command != "quit":
     print("Start - To start Car")
     print("Stop - To stop Car")
     print("Quit - To Quit")
+    
+  elif command == "quit":
+    break
+  else:
+    print("Sorry i don't understand what you are saying!!")
 
