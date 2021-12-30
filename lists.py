@@ -7,3 +7,11 @@ matrix = [
 for row in matrix:
   for item in row:
     print(item)
+
+
+numbers = [20, 40, 10, 4, 70]
+number2 = numbers.sort()
+
+number2.append(100)
+
+print(number2)
