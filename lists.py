@@ -10,8 +10,12 @@ for row in matrix:
 
 
 numbers = [20, 40, 10, 4, 70]
-number2 = numbers.sort()
+numbers.insert(0,30)
+numbers.append(100)
+numbers.sort()
+numbers.reverse()
+numbers.pop()
+numbers.remove(40)
 
-number2.append(100)
 
-print(number2)
+print(numbers)
