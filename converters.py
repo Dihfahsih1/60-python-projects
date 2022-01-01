@@ -22,4 +22,4 @@ def find_max(number):
   for num in number:
     if num > max:
       max = num
-  print(max)
+  return(max)
