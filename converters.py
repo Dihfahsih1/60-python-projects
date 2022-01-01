@@ -17,9 +17,11 @@ for x in numbers:
   print(output)
   
 #printing the largest number  
-max = numbers[0]
-for number in numbers:
-  if number > max:
-    max = number
-print(max)
+class find_max(number):
+  max = number[0]
+  for num in number:
+    if num > max:
+      max = num
+  print(max)
+find_max()
   
