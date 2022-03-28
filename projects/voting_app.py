@@ -4,11 +4,12 @@ nominee_2=input("Enter the nominee 2 name : " )
 nom_1_votes = 0
 nom_2_votes = 0
 
-voter_id = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+voter_id = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,000]
 
 num_of_voters = len(voter_id)
+
 while True:
-  if voter_id == []:
+  if voter_id == [] or voter_id==000:
     print("Voting session has ended")
     
     if nom_1_votes > nom_2_votes:
