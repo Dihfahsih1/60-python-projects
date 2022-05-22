@@ -11,7 +11,12 @@ class Employee:
   
   def apply_raise(self):
     self.pay = int(self.pay * self.raise_amt)
-    
+  
+  def __repr__(self):
+    return "Employee('{}', '{}', '{}')".format(self.fname, self.lname, self.pay) 
+  
+  def __str__(self):
+    return '{} - {}'.format(self.fullname, self.email) 
 class Developer(Employee):
   raise_amt = 1.10
   def __init__(self, first, last, pay, pro_lang):
@@ -38,18 +43,14 @@ class Manager(Employee):
     for emp in self.employees:
       print('-->', emp.fullname())
   
-  def __repr__(self):
-    return "Employee('{}', '{}', '{}')".format(self.fname, self.lname, self.pay) 
-  
-  def __str__(self):
-    return '{} - {}'.format(self.fullname, self.email)  
+ 
     
         
 
-dev_1 = Developer("John", "Smith", 700000, 'Python')
-dev_2 = Developer("Yokana", "Nartin", 49999, 'Java') 
+emp = Employee("John", "Smith", 700000)
+dev_2 = Employee("Yokana", "Nartin", 49999) 
 
-print(dev_1)
+print(str(dev_2))
 
 # mgr = Manager("Patrick", "Aine", 300000, [dev_2])
 # print(mgr.email)
