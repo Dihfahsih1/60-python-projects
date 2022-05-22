@@ -37,19 +37,27 @@ class Manager(Employee):
   def print_emp(self):
     for emp in self.employees:
       print('-->', emp.fullname())
-      
+  
+  def __repr__(self):
+    return "Employee('{}', '{}', '{}')".format(self.fname, self.lname, self.pay) 
+  
+  def __str__(self):
+    return '{} - {}'.format(self.fullname, self.email)  
+    
         
 
 dev_1 = Developer("John", "Smith", 700000, 'Python')
 dev_2 = Developer("Yokana", "Nartin", 49999, 'Java') 
 
+print(dev_1)
 
-mgr = Manager("Patrick", "Aine", 300000, [dev_2])
-print(mgr.email)
-mgr.remove_emp(dev_1)
-mgr.print_emp()
+# mgr = Manager("Patrick", "Aine", 300000, [dev_2])
+# print(mgr.email)
+# mgr.remove_emp(dev_1)
+# mgr.print_emp()
 #print(dev_1.pro_lang)
 # dev_1.apply_raise()
 # print(dev_1.pay)
+
 
     
